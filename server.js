@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
 
+const mongo = require('./mongooseConfig')
+// const mongoose = mongo.mongoose
+
 const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
